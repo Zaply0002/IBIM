@@ -1,8 +1,0 @@
-Destacado
-debug, environments, frameworks y librerias.
-
-Mirar metodos privados (decorador?)
-
-xbim xplorer  ///   BIM Vision
-
-formato rwt
