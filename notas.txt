@@ -6,3 +6,7 @@ Mirar metodos privados (decorador?)
 xbim xplorer  ///   BIM Vision
 
 formato rwt
+
+
+
+https://antonio-fernandez-troyano.medium.com/crear-una-libreria-python-4e841fbd154f
