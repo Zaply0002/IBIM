@@ -1,16 +1,30 @@
 
 import Consultoria.consultas as con
-archivo = "Proyecto1_Normal.ifc"
-con.cargarArchivo(archivo)
+archivo1 = "Proyecto1_Normal.ifc"
+archivo2 = 'prueba02.ifc'
+con.cargarArchivo(archivo2)
+print()
 
-obj = con.ListaIfcObject('IfcSlab')
+info = con.InformacionGeneralProyecto()
+#print(info)
 
 
-x = con.ObtenerPropiedadesObjeto(obj[0])
-#print (x)
+obj = con.obtenerObjeto('IfcBuilding')
 
-con.CadenaPropiedadesFiltradoObjeto(obj[0],'BaseQuantities')
+propiedades = con.ObtenerPropiedadesObjeto(obj)
+#print(propiedades)
 
-y = con.TipoDePropiedadesObjeto(obj[0])
+tipoPropiedades = con.TipoDePropiedadesObjeto(obj)
+#print(tipoPropiedades)
 
-print(y)
+propiedadesFiltrados=con.CadenaPropiedadesFiltradoObjeto(obj, 'Datos de identidad')
+#print(propiedadesFiltrados)
+
+
+
+objs = con.ObtenerObjetosCompone(obj)
+
+for i in objs:
+    print(i)
+    print()
+
