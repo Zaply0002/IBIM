@@ -9,7 +9,7 @@ info = con.InformacionGeneralProyecto()
 #print(info)
 
 
-obj = con.obtenerObjeto('IfcBuilding')
+obj = con.obtenerObjeto('IfcBuildingStorey')
 
 propiedades = con.ObtenerPropiedadesObjeto(obj)
 #print(propiedades)
@@ -22,7 +22,7 @@ propiedadesFiltrados=con.CadenaPropiedadesFiltradoObjeto(obj, 'Datos de identida
 
 
 
-objs = con.ObtenerObjetosCompone(obj)
+objs = con.ObtenerObjetosQueLoComponen(obj)
 
 for i in objs:
     print(i)
